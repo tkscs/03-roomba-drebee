@@ -13,10 +13,18 @@ window = room.draw_room(level = 0)
 
 ###
 # Start your code here
-speed(1)
+speed(10)
 
-right(90)
-forward(40)
+def draw_shape(number_of_sides):
+    angle = 360 / number_of_sides
+    for i in range(number_of_sides):
+        forward(50)
+        right(angle)
+
+draw_shape(6)
+draw_shape(5)
+draw_shape(4)
+draw_shape(3)
  
 # End your code here
 ###
